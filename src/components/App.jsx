@@ -1,13 +1,13 @@
 import React from "react";
 
-function App() {
+function App(props) {
   return (
-    <div>
-      <h1>My Contacts</h1> <h2>Beyonce</h2>
-      <img
-        src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-        alt="avatar_img"
-      />{" "}
+    <div className="myStyle">
+      <h2>{props.name}</h2>
+      <img src={props.img} alt="avatar_img" />
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+      <p>{props.joe}</p>
     </div>
   );
 }
